@@ -8,12 +8,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3306:3306
-#This is copied from an old project.
-# I will be using this as a templete for the api
-#roomatematching-server:
-#image: roomatematching-backend
-# build:
-#context: ./Backend
-#dockerfile: Dockerfile
-#ports:
-#- 3000:30000
+
+  LocalYak-api:
+    image: localyak-api
+    build:
+      context: ../API
+      dockerfile: Dockerfile
+    ports:
+      - 3000:30000
