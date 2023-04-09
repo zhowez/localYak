@@ -1,5 +1,6 @@
 
 FROM mysql:latest
+
 LABEL Name=localyak-database Version=0.0.1
 
 ENV MYSQL_ROOT_PASSWORD=root
